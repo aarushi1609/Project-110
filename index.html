@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Hand Gesture Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Mochiy+Pop+P+One&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&family=Quintessential&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <center>
+        <div id="header-div">
+            <h1>Hand Gesture Web App</h1>
+            <span>&#9757</span>
+            <span>&#9994</span>
+            <span>&#9995</span>
+            <span>&#9996</span>
+            <span>&#128070</span>
+            <span>&#128071</span>
+        </div>
+
+        <h3>Take a selfie of a hand gesture to know it's meaning.</h3>
+        <h4>The model is trained on the following gestures:</h4>
+        <span>&#9996</span>
+        <span>&#9995</span>
+        <span>&#128077</span>
+        <br>
+        <br>
+
+        <div id="div-1" class="col-md-5 col-sm-12 col-xs-12">
+            <h4>Snapshot - </h4>
+            <div id="snapshot-div"></div>
+            <button id="emotion-predict">Predict Emotion</button>
+            <br>
+          </div>
+
+          <div id="div-2" class="col-md-5 col-sm-12 col-xs-12">
+            <h4>Webcam View - </h4>
+            <div id="webcam-div"></div>
+            <button id="capture-image" onclick="take_snapshot();">Capture Image</button>
+            <br>
+          </div>
+          <br>
+          <br><br><br><br>
+
+          <div class="col-md-12"id="predictions">
+            <h4>Prediction 1</h4>
+            <label id="predction_1"></label>
+            <p id="emoji_1"></p>
+            <br>
+            <br>
+            <h4>Prediction 2</h4>
+            <label id="predction_2"></label>
+            <p id="emoji_2"></p>
+          </div>
+    
+    </center>
+</body>
+
+</html>

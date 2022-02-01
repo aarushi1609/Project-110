@@ -1,0 +1,48 @@
+body
+{
+    background-color: #F8EDE3;
+    font-family: 'Mukta', sans-serif;
+}
+
+#header-div
+{
+    border-radius: 40px;
+    background-color: #BDD2B6;
+    padding: 10px;
+    margin-top: 10px;
+    width: 500px;
+    font-family: 'Quintessential', cursive;
+}
+
+span
+{
+    font-size: 30px;
+}
+
+#div-1, #div-2
+{
+    background-color: #A2B29F;
+    border-radius: 30px;
+    width: 300px;
+}
+
+#webcam-div, #snapshot-div
+{
+    width: 250px;
+    height: 300px;
+}
+
+#div-1
+{
+    margin-right: 300px !important;
+    margin-left: 225px;
+}
+
+button
+{
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    background-color: #798777;
+    color: white;
+}
