@@ -46,3 +46,8 @@ button
     background-color: #798777;
     color: white;
 }
+
+#emoji_1, #emoji_2
+{
+    font-size: 25px;
+}
